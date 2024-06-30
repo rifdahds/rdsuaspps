@@ -1,0 +1,30 @@
+//memeriksa API
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Cika",
+    "nip": "198765",
+    "email": "cika@gmail.com",
+    "password": "mantab"
+}
+
+###
+PATCH http://localhost:5000/users/20
+Content-Type: application/json
+
+{
+    "name": "Cikakiku",
+    "nip": "1987654",
+    "email": "cika@gmail.com",
+    "password": "mantab"
+}
+
+###
+DELETE http://localhost:5000/users/20
